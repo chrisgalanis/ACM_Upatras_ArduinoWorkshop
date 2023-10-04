@@ -39,10 +39,10 @@ void loop()
 
   //Traffic Light in Road B
   //Red Light for Cars -> Turn On for 7 seconds
+  //Green Light for Cars -> Turn On for 5 seconds
   //Yellow Light for Cars -> Turn On for 2 seconds
-  //Yellow Light for Cars -> Turn On for 7 seconds
   
-  led_mode(B.pin_red,1); // Turn On Green Light
+  led_mode(B.pin_red,1); // Turn On Red Light
   led_delay(7); // 7 seconds
   led_mode(B.pin_red,0);
   led_mode(B.pin_green,1);
