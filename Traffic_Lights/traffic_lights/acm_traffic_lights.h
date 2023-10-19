@@ -2,14 +2,6 @@
 #ifndef ACM_TRAFFIC_LIGHTS_H
 # define ACM_TRAFFIC_LIGHTS_H
 
-
-    typedef struct
-    {
-      int pin_green;
-      int pin_red;
-      int pin_yellow;
-    }traffic_light;
-
     void led_pin(int pin_num);
     void led_mode(int pin_num, int mode);
     void led_delay(int delay_time);
@@ -34,4 +26,18 @@
     delay(delay_time * 1000);
   }
 
+  int button_delay(int pin_button, int delay_time)
+  {
+    int buttonState = 0;
+
+    for(int i=0; i<5; i++)
+    {
+      delay(delay_time * 1000);
+      buttonState = digitalRead(pin_button);
+
+      if (buttonState == 1)
+        return (buttonState);
+    }
+    return (0);
+  }
 # endif
