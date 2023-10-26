@@ -1,0 +1,5 @@
+led_pin		KEYWORD2
+led_mode 	KEYWORD2
+led_delay	KEYWORD2
+button_pin	KEYWORD2
+button_delay	KEYWORD2
